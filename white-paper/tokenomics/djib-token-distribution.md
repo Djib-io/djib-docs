@@ -8,13 +8,8 @@
 * 1% airdrop and adoption
 * 5% IDO at $0.60-$1.00
 * 10% community fund to support adoption; over 4 years
-* 60% peers network distributed over 20 years&#x20;
-* 5% exchange liquidity; over 5 years&#x20;
-*   5% founders, team, advisers over 5 years (first year at the end of year and from second year every quarter)
+* 60% peers network distributed over 20 years
+* 5% exchange liquidity; over 5 years
+* 5% founders, team, advisers over 5 years (first year at the end of year and from second year every quarter)
 
-
-
-
-
-![](<../../.gitbook/assets/image (17).png>)
-
+![](<../../.gitbook/assets/image (15).png>)

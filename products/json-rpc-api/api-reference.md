@@ -25,14 +25,14 @@ Djib API is mainly implemented as [JSON RPC 2.0](https://www.jsonrpc.org/specifi
 
 Standard error codes and their corresponding meanings are as follows:
 
-| Code       | Message                | Definition                                           |
-| ---------- | ---------------------- | ---------------------------------------------------- |
-| -32600     | INVALID\_JSON\_REQUEST | send invalid request object                          |
-| -32601     | METHOD\_NOT\_FOUND     | method not exist or valid                            |
-| -32602     | INVALID\_PARAMS        | invalid method parameter                             |
-| **-**32603 | INTERNAL\_ERROR        | internal call error                                  |
-| -32604     | PROCEDURE\_IS\_METHOD  | internal error; ID field not provided in the request |
-| -32700     | JSON\_PARSE\_ERROR     | json received by server fails to be parsed           |
+| Code           | Message                | Definition                                           |
+| -------------- | ---------------------- | ---------------------------------------------------- |
+| -32600         | INVALID\_JSON\_REQUEST | send invalid request object                          |
+| -32601         | METHOD\_NOT\_FOUND     | method not exist or valid                            |
+| -32602         | INVALID\_PARAMS        | invalid method parameter                             |
+| \*\*-\*\*32603 | INTERNAL\_ERROR        | internal call error                                  |
+| -32604         | PROCEDURE\_IS\_METHOD  | internal error; ID field not provided in the request |
+| -32700         | JSON\_PARSE\_ERROR     | json received by server fails to be parsed           |
 
 #### Djib RPC Error Code
 
@@ -40,41 +40,9 @@ Coming Soon
 
 ### Non-RPC API
 
-{% swagger method="get" path="/health" baseUrl="https://{api_url}" summary="Health Check" %}
-{% swagger-description %}
-Provides a health-check mechanism for load balancers or other network infrastructure use. It always returns HTTP 200 OK response with a body of "ok", "degraded", or "unknown". 
-{% endswagger-description %}
-
-{% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    "status": "ok"
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    "status": "degraded"
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    "status": "unknown"
-}
-```
-{% endswagger-response %}
-{% endswagger %}
-
 {% swagger method="post" path="/upload" baseUrl="https://{api_url}" summary="Upload file(s)" %}
 {% swagger-description %}
 This method enables users to upload their files on the IPFS network and their drive.
-
-
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="files[]" type="file" required="true" %}
@@ -84,11 +52,11 @@ list of files to be uploaded on Djib network
 {% swagger-parameter in="path" name="type" type="String " required="true" %}
 `public`
 
- for public upload of files on Djib IPFS network, 
+for public upload of files on Djib IPFS network,
 
 `private`
 
- for uploading to user's drive
+for uploading to user's drive
 {% endswagger-parameter %}
 
 {% swagger-parameter in="path" name="publicKey" type="String " required="true" %}
@@ -103,11 +71,11 @@ transaction signature that proves the Djib token is paid for the files (
 )
 {% endswagger-parameter %}
 
-{% swagger-parameter in="path" name="signature" type="String " %}
+{% swagger-parameter in="path" name="signature" type="String " required="false" %}
 the access token that you have received from auth method; this method is required for the private mode
 {% endswagger-parameter %}
 
-{% swagger-parameter in="path" name="pth" type="String " %}
+{% swagger-parameter in="path" name="pth" type="String " required="false" %}
 destination folder of file on your drive required only for private mode
 {% endswagger-parameter %}
 

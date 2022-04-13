@@ -1,3 +1,3 @@
 # Djib Token Supply and Demand
 
-![](<../../.gitbook/assets/image (13).png>)
+![](<../../.gitbook/assets/image (2).png>)
