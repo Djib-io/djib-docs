@@ -40,6 +40,36 @@ Coming Soon
 
 ### Non-RPC API
 
+{% swagger method="get" path="/health" baseUrl="https://{api_url}" summary="Health Check" %}
+{% swagger-description %}
+Provides a health-check mechanism for load balancers or other network infrastructure use. It always returns HTTP 200 OK response with a body of "ok", "degraded", or "unknown". 
+{% endswagger-description %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    "status": "ok"
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    "status": "degraded"
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    "status": "unknown"
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
 {% swagger method="post" path="/upload" baseUrl="https://{api_url}" summary="Upload file(s)" %}
 {% swagger-description %}
 This method enables users to upload their files on the IPFS network and their drive.
