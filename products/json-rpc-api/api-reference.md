@@ -182,15 +182,7 @@ Creating a sign message for private drive authorization
 
 **Parameters**
 
-*   `<string>`- Pubkey of account to query, as base-58 encoded string
-
-
-
-```
-params: [
-    '6fUErqTM7DvkRE7czSPvU16qNmN3eHhJAZgmUbECgbC6'
-]
-```
+* `<string>`- Pubkey of account to query, as base-58 encoded string
 
 **Results**
 
