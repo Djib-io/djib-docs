@@ -23,14 +23,6 @@ We have been always following Solana and were searching for opportunity to contr
 
 ## Read more
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
 {% content-ref url="products/djib-dashboard.md" %}
 [djib-dashboard.md](products/djib-dashboard.md)
 {% endcontent-ref %}
