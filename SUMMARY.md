@@ -27,6 +27,8 @@
 * [Vanila](products/vanila.md)
 * [Djib Dashboard](products/djib-dashboard.md)
 * [JSON RPC API](products/json-rpc-api/README.md)
+  * [Request Formatting](products/json-rpc-api/request-formatting.md)
+  * [Definitions](products/json-rpc-api/definitions.md)
   * [API Reference](products/json-rpc-api/api-reference.md)
 * [Djib-cli](products/djib-cli/README.md)
   * [command line guid](products/djib-cli/command-line-guid.md)
