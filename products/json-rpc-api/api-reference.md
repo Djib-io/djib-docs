@@ -190,7 +190,7 @@ Creating a sign message for private drive authorization
 
 Request:
 
-```
+```shell
 curl {api_url} -X POST -H "Content-Type: application/json" -d '
 {
     "method": "handshake",
@@ -205,7 +205,7 @@ curl {api_url} -X POST -H "Content-Type: application/json" -d '
 
 Result:
 
-```
+```json
 {
     "result": "Sign this message for authenticating with your wallet. Nonce: kejqgnvgilijufbbaaiynqpieanqawee",
     "id": 0,
