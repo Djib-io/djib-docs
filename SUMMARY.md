@@ -30,10 +30,7 @@
   * [Request Formatting](products/json-rpc-api/request-formatting.md)
   * [Definitions](products/json-rpc-api/definitions.md)
   * [API Reference](products/json-rpc-api/api-reference.md)
-* [Djib-cli](products/djib-cli/README.md)
-  * [command line guid](products/djib-cli/command-line-guid.md)
-  * [installation](products/djib-cli/installation.md)
-  * [Usage reference](products/djib-cli/usage-reference.md)
+* [Djib-cli](products/djib-cli.md)
 
 ## Availability Zones
 

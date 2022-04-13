@@ -39,6 +39,6 @@ We have been always following Solana and were searching for opportunity to contr
 [vanila.md](products/vanila.md)
 {% endcontent-ref %}
 
-{% content-ref url="products/djib-cli/" %}
-[djib-cli](products/djib-cli/)
+{% content-ref url="products/djib-cli.md" %}
+[djib-cli.md](products/djib-cli.md)
 {% endcontent-ref %}

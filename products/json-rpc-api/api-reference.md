@@ -182,7 +182,9 @@ Creating a sign message for private drive authorization
 
 **Parameters**
 
-1. `String` - the public address of the wallet owner of drive
+*   `<string>`- Pubkey of account to query, as base-58 encoded string
+
+
 
 ```
 params: [
@@ -190,20 +192,33 @@ params: [
 ]
 ```
 
-**Returns**
+**Results**
 
-`SignMessage` - string message for signing on client wallet
+`<string>` - string message for signing on client wallet
 
 **Example**
 
-```
-// Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"handshake","params":["6fUErqTM7DvkRE7czSPvU16qNmN3eHhJAZgmUbECgbC6"],"id":1}'
+Request:
 
-// Result
+```
+curl {api_url} -X POST -H "Content-Type: application/json" -d '
 {
-  "id":1,
-  "jsonrpc": "2.0",
-  "result": ""Sign this message for authenticating with your wallet. Nonce: kejqgnvgilijufbbaaiynqpieanqawee"
+    "method": "handshake",
+    "params": [
+        "6fUErqTM7DvkRE7czSPvU16qNmN3eHhJAZgmUbECgbC6"
+    ],
+    "jsonrpc": "2.0",
+    "id": 0
+}
+'
+```
+
+Result:
+
+```
+{
+    "result": "Sign this message for authenticating with your wallet. Nonce: kejqgnvgilijufbbaaiynqpieanqawee",
+    "id": 0,
+    "jsonrpc": "2.0"
 }
 ```
